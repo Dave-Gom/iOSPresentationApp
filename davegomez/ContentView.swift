@@ -16,7 +16,9 @@ struct ContentView: View {
                 Text("DAVID GÓMEZ").foregroundColor(.white).fontWeight(.semibold).font(Font.custom("PlayfairDisplay-Regular", size: 40))
                 Text("Mobile Developer").foregroundColor(.white).font(.system(size: 25))
                 Divider()
-                RoundedRectangle(cornerRadius: 50).fill(Color.white).frame(height: 50).overlay(Text("+595972411806"))
+                InfoView(text: "+595972411806", imageName: "phone.fill")
+                InfoView(text: "davegomez426@gmail.com", imageName: "envelope.fill")
+                
             }
         }
        
@@ -26,3 +28,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
